@@ -11,6 +11,16 @@
 	/* Links */
 	a {color: #C79F9F; text-decoration:none;}
 	a:hover{color:#C79F9F;}
+
+	/* Header */
+	.header {
+		color: #E46868 !important; font-size:3em;
+		margin: 30px 50px 50px 50px;
+		padding-top: 30px;
+	}
+	.light{font-family: 'Source Serif 4'; font-weight:300;}
+	.medium{font-family: 'Source Serif 4'; font-weight:500;}
+	.header-link{color:#E46868;}
 /*
 
 	.container{
