@@ -29,6 +29,13 @@
 		max-width:750px;
 	}
 
+	/* Media Adjustments */
+	@media only screen and (max-width:440px) {
+		.header{margin: 20px 20px 20px 20px !important;
+			text-align:center;}
+		.case-div{padding: 20px 20px 20px 20px !important;}
+	}
+
 /*
 
 	.row{
@@ -48,11 +55,5 @@
 
 	.right-col {
 		min-width:50%; float:left;
-	}
-
-	@media only screen and (max-width:440px) {
-		.header{margin: 20px 20px 20px 20px !important;
-			text-align:center;}
-		.case-div{padding: 20px 20px 20px 20px !important;}
 	}
 */
