@@ -29,6 +29,6 @@
 
 	.row{display: flex;} 
 
-	.left-col {float:left; width:50%;line-height:2em;}
+	.left-col {float:left; width:50%;}
 
 	.right-col {width:50%; float:left; padding-left:20px;}
