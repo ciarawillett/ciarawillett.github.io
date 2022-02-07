@@ -26,9 +26,3 @@
 		center; margin:auto;
 		max-width:750px;
 	}
-
-	.row{display: flex;} 
-
-	.left-col {float:left; width:50%;}
-
-	.right-col {width:50%; float:left; padding-left:20px;}
