@@ -13,10 +13,26 @@
 
 		<!-- Load css -->
 		<link rel="stylesheet" href="/static/main.css">
-		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+		
+		<!-- Slick slider -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+	    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" rel="stylesheet" />
+	    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" rel="stylesheet" />
 
 
 	</head>
+
+	<script type="text/javascript">
+        $(document).on('ready', function () {
+            $(".regular").slick({
+                dots: true,
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1
+            });
+        });
+  	</script>
 
 	<style>
 
@@ -160,17 +176,17 @@
 					<!--  IMAGE SLIDER  -->
 					<div class="right-col">
 
-						<div class="slider">
-							<div class="slide">
-								<img src="/files/portfolio/fios_speeddating.png" />
-							</div>
-							<div class="slide">
-								<img src="/files/portfolio/fios_storyboard1.png" />
-							</div>
-							<div class="slide">
-								<img src="/files/portfolio/fios_storyboard2.png" />
-							</div>
-						</div>
+						<section class="regular slider">
+					        <div>
+					            <img style="max-width:200px" src="/files/portfolio/fios_speeddating.png" />
+					        </div>
+					        <div>
+					            <img style="max-width:200px" src="/files/portfolio/fios_storyboard1.png" />
+					        </div>
+					        <div>
+					            <img style="max-width:200px" src="/files/portfolio/fios_storyboard2.png" />
+					        </div>
+					    </section>
 					</div>
 				</div>
 			</div>
@@ -215,20 +231,6 @@
 				</div>
 			</div>
 		</div>
-			
-		<!-- Load js -->
-		<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-  		<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  		<script type="text/javascript">
-		    $(document).ready(function(){
-		      $('.slider').slick({
-		        infinite: true,
-  				slidesToShow: 3,
-  				slidesToScroll: 3
-		      });
-		    });
-		 </script>
 
 	</body>
 

@@ -1,64 +1,40 @@
-<html>
-  <head>
-    <title>My Now Amazing Webpage</title>
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<head>
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" rel="stylesheet" />
 
-  </head>
-
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-
-    <style>
-     
-      .wrapper{
-        width:100%;
-        padding-top: 20px;
-        text-align:center;
-      }
-      h2{
-        font-family:sans-serif;
-        color:#fff;
-      }
-      .carousel{
-        width:90%;
-        margin:0px auto;
-      }
-      .slick-slide{
-        margin:10px;
-      }
-      .slick-slide img{
-        width:100%;
-        border: 2px solid #fff;
-      }
-      .wrapper .slick-dots li button:before {
-        font-size:20px;
-        color:white;
-      }
-    </style>
-
-    <div class="wrapper">
-      <h2>Slick Carousel Example<h2>
-          <div class="carousel">
-            <div><img src="https://picsum.photos/300/200?random=1"></div>
-            <div><img src="https://picsum.photos/300/200?random=2"></div>
-            <div><img src="https://picsum.photos/300/200?random=3"></div>
-            <div><img src="https://picsum.photos/300/200?random=4"></div>
-            <div><img src="https://picsum.photos/300/200?random=5"></div>
-            <div><img src="https://picsum.photos/300/200?random=6"></div>
-          </div>
-    </div>
-
-    <script>
-      $(document).ready(function(){
-        $('.carousel').slick({
-        slidesToShow: 3,
-        dots:true,
-        centerMode: true,
+    <script type="text/javascript">
+        $(document).on('ready', function () {
+            $(".regular").slick({
+                dots: true,
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1
+            });
         });
-      });
-    </script>
-
-  </body>
-</html>
+  </script>
+</head>
+<body>
+    <section class="regular slider">
+        <div>
+            <img src="http://placehold.it/350x300?text=1">
+        </div>
+        <div>
+            <img src="http://placehold.it/350x300?text=2">
+        </div>
+        <div>
+            <img src="http://placehold.it/350x300?text=3">
+        </div>
+        <div>
+            <img src="http://placehold.it/350x300?text=4">
+        </div>
+        <div>
+            <img src="http://placehold.it/350x300?text=5">
+        </div>
+        <div>
+            <img src="http://placehold.it/350x300?text=6">
+        </div>
+    </section>
+</body>
