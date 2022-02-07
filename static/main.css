@@ -27,7 +27,7 @@
 		max-width:750px;
 	}
 
-	.row{display: flex; padding-top: 30px;} 
+	.row{display: flex;} 
 
 	.left-col {float:left; width:50%;line-height:2em;}
 
