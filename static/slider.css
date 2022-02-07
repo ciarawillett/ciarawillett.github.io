@@ -55,15 +55,6 @@
   box-sizing: border-box;
 }
 
-body {
-  height: 100%;
-/*   background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%); */
-}
-
-body h1 {
-  text-align: center;
-}
-
 .slide-container {
   display: flex;
   justify-content: center;
