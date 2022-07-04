@@ -35,46 +35,16 @@
 
 	<style>
 
-	/*DELETÉDELETÉDELETÉDELETÉDELETÉ*/
-
-		/*Delete*/
-		body{
-			margin:0px 0px 0px 0px;
-			background-color: #FBFCFD;
-			font-family: 'Galvji';
-			color: #605757;
-		}
-
-		/* Links */
-		a {color: #C79F9F; text-decoration:none;}
-		a:hover{color:#C79F9F;}
-
-		/* Header */
-		.header {
-			color: #E46868 !important; font-size:3em;
-			margin: 30px 50px 50px 50px;
-			padding-top: 30px;
-		}
-		.light{font-family: 'Source Serif 4'; font-weight:300;}
-		.medium{font-family: 'Source Serif 4'; font-weight:500;}
-		.header-link{color:#E46868;}
-
-		/* Container to center divs for each case study */
-		.container{
-			align-content: 
-			center; margin:auto;
-			max-width:750px;
-		}
-		/*DELETEEE*/
-		/*               */
+		.container{max-width:1000px !important;}
 
 		.intro-div{padding: 30px 50px 30px 50px;}
 		.intro-main{line-height:2em;}
 		.intro-title{
 			font-family: 'Source Serif 4'; font-weight: 500; font-size: 36px;
-			margin-bottom: 20px; padding-bottom: 20px;
-			border-bottom: 1px solid #605757;
+			margin-bottom: 15px; padding-bottom: 15px;
 		}
+		.intro-subtitle{font-family: 'Source Serif 4'; font-weight: 500;
+			font-size:24px; color: #E46868; padding-bottom:10px;}
 
 		/* Case Study Div */
 		.case-div{padding: 20px 50px 20px 50px;}
@@ -89,6 +59,9 @@
 		.row{display: flex;} 
 		.left-col {float:left; width:50%;}
 		.right-col {width:50%; float:left; padding-left:20px;}
+
+		/* Overview Columns */
+		.overview-column {flex: 25%; padding: 20px;}
 
 		/* Slider */
 		.regular button{color: black;}
@@ -109,157 +82,273 @@
 			<a class="header-link" href="https://ciarawillett.github.io/index.html" ><span class="light">ciara</span><span class="medium">willett</span></a>
 		</div>
 
-		<!-- Intro to Case Study -->
-		<div class="intro-div">
-			<div class="container">
-
-				<div class="intro-title">class project: Fios</div>
-
-				<div class="intro-main">
-					This case study was my independent project submitted for a 'HCI for Tech Executives' class at Carnegie Mellon University. I used several UX research methods to improve the experience of purchasing internet from the Verizon Fios website. 
-
-					<p style="margin: 10px 0px 0px 0px">
-						<b>Project Dates:</b> October to December 2020
-					</p>
-					
-					<p style="margin: 10px 0px 0px 0px">
-						<b>Research Methods:</b> stakeholder mapping, contextual inquiry, affinity clustering, journey mapping, storyboards, speed dating, prototyping, think-aloud usability testing.
-					</p>
-
-					<p style="margin: 10px 0px 0px 0px">
-						<b>Tools Used:</b> Figma, Miro.
-					</p>
-				</div>
-
-			</div>
-		</div> <!-- End of Intro -->
-
-		<!-- Key Problems -->
+		<!-- TITLE OF PROJECT -->
 		<div class="case-div">
 			<div class="container">
 
-				<div class="subtitle">
-					Key Problems: Distrust in ISP's, Uncertainty in Pricing Plans
-				</div>
-
 				<div class="row">
-					<div class="left-col case-main">
-						In a series of contextual inquiries, participants walked through the process of purchasing internet from Fios and a competitor. 
-
-						<p style="margin: 10px 0px 0px 0px">
-							During the exercise, participants expressed a substantial level of distrust towards internet service providers and had concerns about hidden costs. Additionally, participants felt they were unable to adequately compare pricing plans.
-						</p>
+					<div class="left-col case-main" style="margin-top:150px">
+						<div class="intro-title">case study: verizon Fios</div>
+						<div class="intro-subtitle">improving the experience of purchasing internet online</div>
 					</div>
 
 					<div class="right-col">
 						<div class="img-container">
 							<div>
-								<img style="max-width:100%;max-height:300px" src="/files/portfolio/fios_affinity.png">
+								<img style="width:450px" src="/files/portfolio/fios/fios_icon.png">
 							</div>
 						</div>
-						<p style="margin: 5px 0px 0px 0px">
-							<span class="figure-caption">Example Insight from Affinity Diagram: Participants tended to distrust ISPs and desired more information about pricing plans.</span>
-						</p>
+						
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<!-- Crafting a Solution -->
+		<!-- OVERVIEW OF PROJECT -->
+
+		<div class="case-div">
+			<div class="container case-main">
+				<p style="margin: 10px 0px 0px 0px">
+					<b>Overview:</b> Internet is a necessity. However, the purchasing process can be overwhelming and leave the customer feeling frustrated or confused about their options, which is further compounded by a general lack of distrust towards internet service providers. 
+				</p>
+
+				<p style="margin: 10px 0px 0px 0px">
+					<b>Problem:</b> PUT PROBLEM HERE: that we identified distrust in providers, and that the organization of the website made it difficult to understand what the options were. 
+				</p>
+
+				<p style="margin: 10px 0px 0px 0px">
+					<b>Solution:</b> PUT SOLUTION HERE. Blah blah blah blah blah blah. Blah blah blah blah blah blah. Blah blah blah blah blah blah. Blah blah blah blah blah blah. Blah blah blah blah blah blah. 
+				</p>
+			</div>
+		</div>
+
+		<div class = "overview-columns" style="margin-top:30px">
+			<div class="container case-main">
+
+				<div class="row">
+					<div class="overview-column">
+						<b>Role</b><br>
+						UX Research<br>
+						Design
+					</div>
+					<div class="overview-column">
+						<b>Timeline</b><br>
+						3 months<br>
+						Oct - Dec 2020
+					</div>
+					<div class="overview-column">
+						<b>Skills/Methods</b><br>
+						Interviews<br>
+						Data Analysis<br>
+						Prototyping<br>
+						Usability Testing
+					</div>
+					<div class="overview-column">
+						<b>Tools</b><br>
+						Figma<br>
+						Miro
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Part 1: Discovery Process -->
+
 		<div class="case-div">
 			<div class="container">
 
-				<div class="subtitle">
-					Crafting a Solution: Speed-Dating & Storyboards
-				</div>
+				<div class="subtitle">Discovery Process</div>
 
 				<div class="row">
 					<div class="left-col case-main">
-						I used the design sprint method "crazy 8's" to draft potential solutions to key issues identified during contextual inquiry. 
+
+
 						<p style="margin: 10px 0px 0px 0px">
-							Next, I drafted storyboards to model low- and high-risk adaptations of the crazy-8's. Findings from speed dating sessions reiterated that users want feedback about the different plans from existing customers, and revealed that a stranger's feedback was as valuable as a friend or family member's.
+							I began with a series of <b>contextual interviews</b> on Zoom to understand 1) the needs of the customer, 2) the wants of the customer, and 3) what informs their decision process. I simultaneously incorporated some <b>competitive analysis</b> by having participants walk through the process of purchasing internet from Fios and a competitor, Xfinity.
+						</p>
+
+						<p style="margin: 10px 0px 0px 0px">
+							I used <b>affinity diagramming</b> to analyze the data and identified two key problem areas:
+
+							<ul>
+								<li>Participants did not understand the differences between the pricing plans offered by Fios. Fios provided paragraph descriptions that listed the benefits of each plan, but it was hard to map the key distinctions between each. They felt frustration about not knowing which option to choose.</li>
+								<li>There was a substantial level of distrust expressed towards internet service providers and what they wrote on their website. Primarily, they were worried about hidden costs.</li>
+							</ul>
+						</p>
+
+					</div>
+
+					<div class="right-col">
+						<div class="img-container">
+							<div>
+								<img style="max-width:490px" src="/files/portfolio/fios/fios_affinity.png">
+							</div>
+						</div>
+						<p style="margin: 5px 0px 0px 0px" align="center">
+							<span class="figure-caption">Example Insight from Affinity Diagram: Participants tended to distrust ISPs and desired more information about the differences between pricing plans.</span>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Part 2: Exploratory Process -->
+
+		<div class="case-div">
+			<div class="container">
+
+				<div class="subtitle">Exploratory Process</div>
+
+				<div class="row" style="padding-bottom:30px !important">
+					<div class="left-col case-main">
+
+
+						<p style="margin: 10px 0px 0px 0px">
+							I started with the design sprint method, <b>Crazy 8's</b>, to sketch low and high risk solutions. During the interviews, participants said they would rely on family and friends for advice about selecting a plan or provider. To integrate information about the different plans & feedback from actual customers, I wanted to know if the customer would value other sources of feedback (e.g., a collated review section on the website).
 						</p>
 					</div>
 
-					<!--  IMAGE SLIDER  -->
 					<div class="right-col">
-
-						<section class="regular slider">
-					        <div style="margin:auto">
-					            <img style="max-width:100%;max-height:300px" src="/files/portfolio/fios_speeddating.png" />
-					        </div>
-					        <div style="margin:auto">
-					            <img style="max-width:100%;max-height:300px" src="/files/portfolio/fios_storyboard1.png" />
-					        </div>
-					        <div style="margin:auto">
-					            <img style="max-width:100%;max-height:300px" src="/files/portfolio/fios_storyboard2.png" />
-					        </div>
-					        <div style="margin:auto">
-					            <img style="max-width:100%;max-height:300px" src="/files/portfolio/fios_storyboard3.png" />
-					        </div>
-					    </section>
+						<div class="img-container">
+							<div><img style="max-width:490px" src="/files/portfolio/fios/fios_speeddating.png" /></div>
+						</div>
+						<p style="margin: 5px 0px 0px 0px" align="center">
+							<span class="figure-caption">Designs created for Crazy 8's sprint.</span>
+						</p>
 					</div>
 				</div>
-			</div>
-		</div>
 
-		<!-- Next Steps -->
-		<div class="case-div">
-			<div class="container">
-
-				<div class="subtitle">
-					Testing: Prototyping and User Think-Alouds
-				</div>
-
-				<div class="row">
+				<!-- Second step -->
+				<div class="row" style="border-top: 1px solid #E46868; padding-top:30px !important; padding-bottom:30px !important">
 					<div class="left-col case-main">
-						I created an <a href="https://www.figma.com/proto/Hy71X6vILCEcjZkr1UuBMx/Hi-Fi-Prototype">interactive prototype</a> that modeled two new functionalities. First, a customer feedback page that customers could search before choosing a plan. Second, a simple comparison table to highlight the differences between each pricing plan. 
+						<p style="margin: 10px 0px 0px 0px">
+							Next, I selected three of the Crazy 8 ideas (one low, one medium, one high risk) and created storyboards for each one. I conducted brief <b>speed dating</b> sessions to get feedback from target customers:
+
+							<ul>
+								<li>Participants reiterated the findings from the discovery process: they value insights from verified customers.</li>
+								<li>This insight does not necessarily have to come from a trusted family member or friend - having access to feedback in general is useful in making the decision about a pricing plan.</li>
+							</ul>
+						</p>
 					</div>
 
-					<!--  IMAGE SLIDER  -->
 					<div class="right-col">
-
-						<section class="regular slider">
-					        <div style="margin:auto">
-					            <img style="max-width:100%;max-height:300px" src="/files/portfolio/fios_usertesting1.png" />
-					        </div>
-					        <div style="margin:auto">
-					            <img style="max-width:100%;max-height:300px" src="/files/portfolio/fios_usertesting2.png" />
-					        </div>
-					        <div style="margin:auto">
-					            <img style="max-width:100%;max-height:300px" src="/files/portfolio/fios_usertesting3.png" />
-					        </div>
-					        <div style="margin:auto">
-					            <img style="max-width:100%;max-height:300px" src="/files/portfolio/fios_usertesting4.png" />
-					        </div>
-					    </section>
+						<div class="img-container">
+							<section class="regular slider">
+						        <div style="margin:auto">
+						            <img style="max-width:490px" src="/files/portfolio/fios/fios_storyboard1.png" />
+						        </div>
+						        <div style="margin:auto">
+						            <img style="max-width:490px" src="/files/portfolio/fios/fios_storyboard2.png" />
+						        </div>
+						        <div style="margin:auto">
+						            <img style="max-width:490px" src="/files/portfolio/fios/fios_storyboard3.png" />
+						        </div>
+						    </section>
+						</div>
+						<p style="margin: 5px 0px 0px 0px" align="center">
+							<span class="figure-caption">Storyboards created for testing in speed dating rounds.</span>
+						</p>
 					</div>
-				</div>
-				<div class="case-main">
-					Insights from think-aloud testing suggest that the comparison table was effective, and required some minor tweaking. However, the customer feedback page did not adequately resolve feelings of distrust; potential solutions are listed below.
-				</div>
+				</div> <!-- End of step -->
+
+				<!-- Third step -->
+				<div class="row" style="padding-top:30px !important; border-top: 1px solid #E46868; padding-bottom:30px !important">
+					<div class="left-col case-main">
+						<p style="margin: 10px 0px 0px 0px">
+							Using this feedback, I designed an <a href="https://www.figma.com/proto/Hy71X6vILCEcjZkr1UuBMx/Hi-Fi-Prototype">interactive prototype on Figma</a> that included two features:
+
+							<ul>
+								<li>A clearly formatted table that illustrated the differences between the three plans. Each column highlighted the corresponding feature for that plan so that users could easily see the differences.</li>
+								<li>Add a review page for each of the plans so that users can get feedback from verified customers. Previous customers can leave a detailed description of their experience, rate how much they like the plan (on a scale of 1 to 5). I also included a feature for users to rate how helpful they found the feedback, to make high quality reviews more convenient.</li>
+							</ul>
+						</p>
+					</div>
+
+					<div class="right-col">
+						<div class="img-container">
+							<section class="regular slider">
+						        <div style="margin:auto">
+						            <img style="max-width:490px" src="/files/portfolio/fios/fios_comparisons.png" />
+						        </div>
+						        <div style="margin:auto">
+						            <img style="max-width:490px" src="/files/portfolio/fios/fios_reviews.png" />
+						        </div>
+						    </section>
+						</div>
+						<p style="margin: 5px 0px 0px 0px">
+							<span class="figure-caption">(1) Table to show differences between plans; (2) Reviews from former customers.</span>
+						</p>
+					</div>
+				</div> <!-- End of step -->
+
+				<!-- Fourth step -->
+				<div class="row" style="padding-top:30px !important; border-top: 1px solid #E46868; padding-bottom:30px !important">
+					<div class="left-col case-main">
+						<p style="margin: 10px 0px 0px 0px">
+							I conducted a series of <b>think-aloud interviews</b> to conduct <b>usability testing</b> for the prototype. When developing the tasks to assess usability, I was primarily concerned about:
+
+							<ul>
+								<li>Does the participant trust the reviews?</li>
+								<li>Is there information missing from the product comparison page?</li>
+								<li>What does the user find confusing or difficult to accomplish?</li>
+							</ul>
+						</p>
+
+						<p style="margin: 10px 0px 0px 0px">
+							Usability testing found that the table successfuly helped participants find necessary information to compare plans and understand key differences between them, but they still did not trust the customer reviews! One reason for this is because the reviews were automatically sorted by "high" to "low" - none of the participants thought to change how the reviews were sorted, and so they thought that Fios was "curating" the reviews to only include positive feedback. 
+						</p>
+					</div>
+
+					<div class="right-col">
+						<div class="img-container">
+							<section class="regular slider">
+						        <div style="margin:auto">
+						            <img style="max-width:490px" src="/files/portfolio/fios/fios_usabilitytaskreport.png" />
+						        </div>
+						        <div style="margin:auto">
+						            <img style="max-width:490px" src="/files/portfolio/fios/fios_usabilitytesting1.png" />
+						        </div>
+						        <div style="margin:auto">
+						            <img style="max-width:490px" src="/files/portfolio/fios/fios_usabilitytesting2.png" />
+						        </div>
+						    </section>
+						</div>
+						<p style="margin: 5px 0px 0px 0px" align = "center">
+							<span class="figure-caption">(1) Examples of tasks completed during usability testing; (2, 3) Example deliverables that summarize findings from the interviews.</span>
+						</p>
+					</div>
+				</div> <!-- End of step -->
+
 			</div>
 		</div>
 
-		<!-- Next Steps -->
+		<!-- Part 3: Future Directions -->
+
 		<div class="case-div">
 			<div class="container">
 
-				<div class="subtitle">
-					Future Considerations / Possibilities
-				</div>
+				<div class="subtitle">Future Directions / Takeaways</div>
 
-				<div class="intro-main">
-					If I were to continue this project, here's some ways I would have addressed user feedback:
+				<div class="container case-main">
 
 					<ul>
-						<li>Further highlight plan differences by reducing repetitive text in the comparison table.</li>
-						<li>Improve the trustworthiness & authenticity of user reviews by 1) adding a "verified customer" badge and 2) use actual (not hypothetical) customer feedback quotes.</li>
-						<li>Adopt a star-based review system to mirror familiar rating systems, as opposed to creating a novel system where ratings were represented with the Verizon check.</li>
+						<ol>
+							The next step would be to conduct A/B testing to test whether adding user reviews actually <b>improves customer trust and conversion</b>.
+						</ol>
+						<ol>
+							Purchasing internet or changing internet service providers (ISPs) is not something that affects only one age demographic. I noticed a trend where the older participants did not care about the reviews and said that the reviews actually reduced their trust in the ISP; whereas the younger participants sought out this information when making their purchase. If this trend is reliable, future solutions would need to balance the needs of both users. 
+						</ol>
 					</ul>
-
 				</div>
+
 			</div>
+		</div>
+
+
+
+
+		<div style="margin:10px;font-size:10px">
+			<a href="https://storyset.com/business">Business illustrations by Storyset</a>
 		</div>
 
 	</body>
