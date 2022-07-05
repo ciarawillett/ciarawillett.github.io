@@ -37,8 +37,8 @@
 
 		.container{max-width:1000px !important;}
 
-		.intro-div{padding: 30px 50px 30px 50px;}
-		.intro-main{line-height:2em;}
+		/* Intro Card */
+		.intro-card{margin-top:150px}
 		.intro-title{
 			font-family: 'Source Serif 4'; font-weight: 500; font-size: 36px;
 			margin-bottom: 15px; padding-bottom: 15px;
@@ -58,7 +58,7 @@
 		}
 		.figure-caption{font-size:10px; line-height:12px !important;}
 
-		/*Row*/
+		/*Card Style Row*/
 		.right-col{padding-left:20px;}
 		.cards, .overview-row {
 		  margin: 0 auto;
@@ -66,9 +66,8 @@
 		  gap: 1rem;
 		}
 		
-
-		/* Overview Columns */
-		.overview-column {flex: 25%; padding: 20px; max-width:190px;}
+		/* Overview of Project Columns */
+		.overview-column {padding: 20px; max-width:190px;}
 		.overview-row {width:700px;margin:auto !important;
 			grid-template-columns: repeat(2, 1fr)}
 
@@ -79,7 +78,7 @@
 		@media (max-width:469px) {
 			.header{margin: 20px 10px 20px 10px !important;
 				text-align:center;}
-			.intro-div{padding: 20px 20px 20px 20px !important;}
+			.intro-card{margin-top:100px;}
 			.case-div{padding: 20px 20px 20px 20px !important;}
 
 			img{max-width:300px !important;}
@@ -105,8 +104,8 @@
 		<div class="case-div">
 			<div class="container">
 
-				<div class="cards">
-					<div class="left-col case-main" style="margin-top:150px">
+				<div class="cards intro-card">
+					<div class="left-col case-main">
 						<div class="intro-title">law students' impressions of the grading curve</div>
 						<div class="intro-subtitle">at the University of Pittsburgh</div>
 					</div>
