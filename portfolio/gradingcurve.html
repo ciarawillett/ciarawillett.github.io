@@ -46,6 +46,7 @@
 		.intro-subtitle{font-family: 'Source Serif 4'; font-weight: 500;
 			font-size:24px; color: #E46868; padding-bottom:10px;}
 
+
 		/* Case Study Div */
 		.case-div{padding: 20px 50px 20px 50px;}
 		.case-main{line-height:2em;}
@@ -56,30 +57,41 @@
 			padding-bottom:10px;
 		}
 		.figure-caption{font-size:10px; line-height:12px !important;}
-		.row{display: flex;} 
-		.left-col {float:left; width:50%;}
-		.right-col {width:50%; float:right; padding-left:20px;}
+
+		/*Row*/
+		.right-col{padding-left:20px;}
+		.cards, .overview-row {
+		  margin: 0 auto;
+		  display: grid;
+		  gap: 1rem;
+		}
+		
 
 		/* Overview Columns */
 		.overview-column {flex: 25%; padding: 20px; max-width:190px;}
-		.overview-row {width:700px;margin:auto !important;}
+		.overview-row {width:700px;margin:auto !important;
+			grid-template-columns: repeat(2, 1fr)}
 
 		/* Slider */
 		.regular button{color: black;}
 
 		/* Media Adjustments */
-		@media only screen and (max-width:440px) {
+		@media (max-width:469px) {
 			.header{margin: 20px 10px 20px 10px !important;
 				text-align:center;}
 			.intro-div{padding: 20px 20px 20px 20px !important;}
 			.case-div{padding: 20px 20px 20px 20px !important;}
 
-			.right-col{float:none !important}
-
 			img{max-width:300px !important;}
 
 			.overview-row{max-width:350px !important;}
 		}
+
+		@media (min-width: 600px) {
+		  .cards { grid-template-columns: repeat(2, 1fr) !important; }
+		  .overview-row { grid-template-columns: repeat(3, 1fr) !important; }
+		}
+
 	</style>
 
 	<body>
@@ -93,7 +105,7 @@
 		<div class="case-div">
 			<div class="container">
 
-				<div class="row">
+				<div class="cards">
 					<div class="left-col case-main" style="margin-top:150px">
 						<div class="intro-title">law students' impressions of the grading curve</div>
 						<div class="intro-subtitle">at the University of Pittsburgh</div>
@@ -111,6 +123,7 @@
 			</div>
 		</div>
 
+
 		<!-- OVERVIEW OF PROJECT -->
 
 		<div class="case-div">
@@ -125,10 +138,11 @@
 			</div>
 		</div>
 
+
 		<div class="case-div" align="center">
 			<div class="container case-main">
 
-				<div class="row overview-row" align="left">
+				<div class="overview-row" align="left">
 					<div class="overview-column">
 						<b>Role</b><br>
 						Research Consultant<br>
@@ -151,6 +165,7 @@
 
 		<!-- Part 1: Survey Generation -->
 
+
 		<div class="case-div">
 			<div class="container">
 
@@ -162,8 +177,8 @@
 					</p>
 				</div>
 
-				<div class="row">
-					<div class="left-col case-main">
+				<div class="cards">
+					<div class="case-main left-col">
 
 						<p style="margin: 10px 0px 0px 0px">
 							<ul>
@@ -194,7 +209,7 @@
 
 				<div class="subtitle">Data Analysis</div>
 
-				<div class="row" style="padding-bottom:30px !important">
+				<div class="cards" style="padding-bottom:30px !important">
 					<div class="left-col case-main">
 
 						<p style="margin: 10px 0px 0px 0px">
