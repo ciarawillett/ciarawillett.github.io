@@ -39,14 +39,10 @@
 
 		.icon-container{border:1px solid black; border-radius:45px;height:300px;width:300px;padding-bottom:20px !important;}
 
-		.intro-div{padding: 30px 50px 30px 50px;}
-		.intro-main{line-height:2em;}
 		.intro-title{
 			font-family: 'Source Serif 4'; font-weight: 500; font-size: 36px;
 			margin-bottom: 15px; padding-bottom: 15px;
 		}
-		.intro-subtitle{font-family: 'Source Serif 4'; font-weight: 500;
-			font-size:24px; color: #E46868; padding-bottom:10px;}
 
 		/* Case Study Div */
 		.case-div{padding: 20px 50px 20px 50px;}
@@ -54,11 +50,14 @@
 		li{padding-bottom:15px;}
 		.subtitle{font-weight: 500; color: #E46868; font-size:18px; padding-bottom:10px;}
 		.figure-caption{font-size:14px; line-height:12px !important;}
-		.row{display: flex;} 
-		.left-col {float:left; width:50%;}
-		.right-col {width:50%; float:left; padding-left:20px;}
 
-		.row{margin-top:50px;}
+		/*Card Style Row*/
+		.right-col{padding-left:20px;}
+		.cards{
+		  margin: 0 auto;
+		  display: grid;
+		  gap: 1rem;
+		}
 
 		/* Overview Columns */
 		.overview-column {flex: 25%; padding: 20px;}
@@ -67,11 +66,14 @@
 		.regular button{color: black;}
 
 		/* Media Adjustments */
-		@media only screen and (max-width:440px) {
+		@media (max-width:469px) {
 			.header{margin: 20px 10px 20px 10px !important;
 				text-align:center;}
-			.intro-div{padding: 20px 20px 20px 20px !important;}
 			.case-div{padding: 20px 20px 20px 20px !important;}
+		}
+
+		@media (min-width: 600px) {
+		  .cards { grid-template-columns: repeat(2, 1fr) !important; }
 		}
 	</style>
 
@@ -95,9 +97,7 @@
 		<div class="case-div">
 			<div class="container">
 
-				<div class="row">
-
-					
+				<div class="cards">
 					<div class="left-col case-main" align="center">
 
 						<a href="https://ciarawillett.github.io/portfolio/verizon.html">
@@ -130,9 +130,7 @@
 
 				</div>
 
-				<div class="row">
-
-					
+				<div class="cards">
 					<div class="left-col case-main" align="center">
 
 						<a href="https://ciarawillett.github.io/portfolio/correlationcausation_methods.html">
@@ -165,8 +163,7 @@
 
 				</div>
 
-				<div class="row">
-
+				<div class="cards">
 					<div class="left-col case-main" align="center">
 						<a href="https://ciarawillett.github.io/portfolio/simplerelationshipslongtimeframes.html">
 							<div class="icon-container">
