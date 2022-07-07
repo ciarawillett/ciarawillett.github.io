@@ -37,14 +37,15 @@
 
 		.container{max-width:1000px !important;}
 
-		.intro-div{padding: 30px 50px 30px 50px;}
-		.intro-main{line-height:2em;}
+		/* Intro Card */
 		.intro-title{
+			margin-top:150px;
 			font-family: 'Source Serif 4'; font-weight: 500; font-size: 36px;
 			margin-bottom: 15px; padding-bottom: 15px;
 		}
 		.intro-subtitle{font-family: 'Source Serif 4'; font-weight: 500;
 			font-size:24px; color: #E46868; padding-bottom:10px;}
+
 
 		/* Case Study Div */
 		.case-div{padding: 20px 50px 20px 50px;}
@@ -56,6 +57,7 @@
 			padding-bottom:10px;
 		}
 		.figure-caption{font-size:10px; line-height:12px !important;}
+
 		/*Card Style Row*/
 		.right-col{padding-left:20px;}
 		.cards, .overview-row {
@@ -63,7 +65,9 @@
 		  display: grid;
 		  gap: 1rem;
 		}
-
+		
+		.header-links a {margin-right:15px;}
+		
 		/* Overview of Project Columns */
 		.overview-column {padding: 20px; max-width:250px;}
 		.overview-row {max-width:800px;margin:auto !important;
@@ -75,21 +79,23 @@
 		/* Media Adjustments */
 		@media (max-width:469px) {
 			.header{margin: 20px 10px 20px 10px !important;
-				text-align:center !important;}
+				text-align:center;}
+			.intro-title{margin-top:100px;}
 			.case-div{padding: 20px 20px 20px 20px !important;}
+
 			img{max-width:300px !important;}
+
 			.header-links{text-align:center !important;}
 			.overview-column {padding: 10px !important}
-		}
 
-		.header-links a {margin-right:15px;}
+			.what-we-learned{margin-top:20px;}
+		}
 
 		@media (min-width: 600px) {
 		  .cards { grid-template-columns: repeat(2, 1fr) !important; }
-		  .overview-row { grid-template-columns: repeat(4, 1fr) !important; }
+		  .overview-row { grid-template-columns: repeat(3, 1fr) !important; }
 		}
 
-		
 	</style>
 
 	<body>
@@ -113,16 +119,16 @@
 		<div class="case-div">
 			<div class="container">
 
-				<div class="row">
-					<div class="left-col case-main" style="margin-top:150px">
-						<div class="intro-title">fostering resilience & engagement in law students</div>
+				<div class="cards">
+					<div class="left-col case-main">
+						<div class="intro-title">fostering resilience and engagement with law students</div>
 						<div class="intro-subtitle">at the University of Pittsburgh</div>
 					</div>
 
 					<div class="right-col">
 						<div class="img-container">
 							<div>
-								<img style="width:450px" src="/files/portfolio/resilienceengagement/storyset-icon.png">
+								<img style="width:450px" src="/files/portfolio/lawsurvey/survey-icon.png">
 							</div>
 						</div>
 						
@@ -131,24 +137,30 @@
 			</div>
 		</div>
 
+
 		<!-- OVERVIEW OF PROJECT -->
 
 		<div class="case-div">
 			<div class="container case-main">
 				<p style="margin: 10px 0px 0px 0px">
-					<b>Overview of the Problem:</b> This project was one goal of the <a href="https://www.law.pitt.edu/centers/fostering-resilience-and-engagement-law-students">Fostering Resilience and Engagement</a> project at the University of Pittsburgh School of Law, in which a group of faculty and researchers is working to address the social and academic needs of students. During one-on-one conversations with students, many brought up their frustrations and negative experiences with the grading curve at the University; only a certain number of students are allowed to receive an A in certain courses. 
+					<b>Overview of the Problem:</b> Although first-year law students begin their studies full of enthusiasm, many are full of anxiety by the end of the first-semester. They have anxieties about grades & performance in the classroom, future job prospects, the competitive atmosphere; many have imposter syndrome and think that they do not belong in law school. 
 				</p>
 
 				<p style="margin: 10px 0px 0px 0px">
-					<b>Solution:</b> Before the administration and faculty discussed the future of the grading curve policy at an upcoming meeting, we surveyed students about their perceptions of the curve & drafted a report. Based on our findings & discussions with faculty, the administration voted to remove the grading curve in future semesters. 
+					<b>Solution:</b> The <a href="https://www.law.pitt.edu/centers/fostering-resilience-and-engagement-law-students">Fostering Resilience and Engagement</a> project is a collaborative effort by law professors and psychologists to address the social and academic needs of students; to help students become more resilient and the process of legal education more humane. Our team is testing a series of well-timed interventions during the students' first year of law school. These interventions encourage the student to adopt an "adaptive mindset", with the goal of promoting resilience, growth, and success. 
+				</p>
+
+				<p style="margin: 10px 0px 0px 0px">
+					<b>Collaborators:</b> Ann Sinsheimer, PhD, JD, University of Pittsburgh School of Law; Omid Fotuhi, PhD, Learning, Research, & Development Center.</div>
 				</p>
 			</div>
 		</div>
 
+
 		<div class="case-div" align="center">
 			<div class="container case-main">
 
-				<div class="row" style="width:700px;margin:auto !important;" align="left">
+				<div class="overview-row" align="left">
 					<div class="overview-column">
 						<b>Role</b><br>
 						Research Consultant<br>
@@ -171,6 +183,7 @@
 
 		<!-- Part 1: Survey Generation -->
 
+
 		<div class="case-div">
 			<div class="container">
 
@@ -182,8 +195,8 @@
 					</p>
 				</div>
 
-				<div class="row">
-					<div class="left-col case-main">
+				<div class="cards">
+					<div class="case-main left-col">
 
 						<p style="margin: 10px 0px 0px 0px">
 							<ul>
@@ -214,7 +227,7 @@
 
 				<div class="subtitle">Data Analysis</div>
 
-				<div class="row" style="padding-bottom:30px !important">
+				<div class="cards" style="padding-bottom:30px !important">
 					<div class="left-col case-main">
 
 						<p style="margin: 10px 0px 0px 0px">
@@ -230,7 +243,7 @@
 						</p>
 					</div>
 
-					<div class="right-col">
+					<div class="right-col what-we-learned">
 						<b>What We Learned</b><br><br>
 						
 						The students overwhelmingly expressed negative feelings and experiences about the grading curve. A few key themes emerged:
@@ -269,8 +282,6 @@
 
 			</div>
 		</div>
-
-
 
 
 		<div style="margin:10px;font-size:10px">
