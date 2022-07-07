@@ -56,30 +56,57 @@
 			padding-bottom:10px;
 		}
 		.figure-caption{font-size:10px; line-height:12px !important;}
-		.row{display: flex;} 
-		.left-col {float:left; width:50%;}
-		.right-col {width:50%; float:left; padding-left:20px;}
+		/*Card Style Row*/
+		.right-col{padding-left:20px;}
+		.cards, .overview-row {
+		  margin: 0 auto;
+		  display: grid;
+		  gap: 1rem;
+		}
 
-		/* Overview Columns */
-		.overview-column {flex: 25%; padding: 20px; max-width:190px;}
+		/* Overview of Project Columns */
+		.overview-column {padding: 20px; max-width:250px;}
+		.overview-row {max-width:800px;margin:auto !important;
+			grid-template-columns: repeat(2, 1fr)}
 
 		/* Slider */
 		.regular button{color: black;}
 
 		/* Media Adjustments */
-		@media only screen and (max-width:440px) {
+		@media (max-width:469px) {
 			.header{margin: 20px 10px 20px 10px !important;
-				text-align:center;}
-			.intro-div{padding: 20px 20px 20px 20px !important;}
+				text-align:center !important;}
 			.case-div{padding: 20px 20px 20px 20px !important;}
+			img{max-width:300px !important;}
+			.header-links{text-align:center !important;}
+			.overview-column {padding: 10px !important}
 		}
+
+		.header-links a {margin-right:15px;}
+
+		@media (min-width: 600px) {
+		  .cards { grid-template-columns: repeat(2, 1fr) !important; }
+		  .overview-row { grid-template-columns: repeat(4, 1fr) !important; }
+		}
+
+		
 	</style>
 
 	<body>
 
 		<!-- Page Header -->
 		<div class = "header">
-			<a class="header-link" href="https://ciarawillett.github.io/index.html" ><span class="light">ciara</span><span class="medium">willett</span></a>
+			<div class="cards">
+				<div class="left-col">
+					<a class="header-link" href="https://ciarawillett.github.io/index.html" ><span class="light">ciara</span><span class="medium">willett</span></a>
+				</div>
+				<div class="right-col header-links" align="right" style="font-size:16px !important">
+					<a href="mailto:ciarawillett@pitt.edu">email</a>
+					<a href="portfolio.html">portfolio</a>
+					<a href="files/Willett_Resume.pdf" download>resume</a>
+					<a href="files/Willett_CV.pdf" download>CV</a>
+				</div>
+			</div>
 		</div>
 
 		<!-- TITLE OF PROJECT -->
