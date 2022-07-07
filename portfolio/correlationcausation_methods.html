@@ -60,8 +60,10 @@
 		.left-col {float:left; width:50%;}
 		.right-col {width:50%; float:left; padding-left:20px;}
 
-		/* Overview Columns */
-		.overview-column {flex: 25%; padding: 20px;}
+		/* Overview of Project Columns */
+		.overview-column {padding: 20px; max-width:200px;}
+		.overview-row {width:700px;margin:auto !important;
+			grid-template-columns: repeat(2, 1fr)}
 
 		/* Slider */
 		.regular button{color: black;}
@@ -75,12 +77,23 @@
 		  transform: translateY(-50%);
 		}
 
+		.cards, .overview-row {
+		  margin: 0 auto;
+		  display: grid;
+		  gap: 1rem;
+		}
+
 		/* Media Adjustments */
-		@media only screen and (max-width:440px) {
+		@media (max-width:469px) {
 			.header{margin: 20px 10px 20px 10px !important;
 				text-align:center;}
 			.intro-div{padding: 20px 20px 20px 20px !important;}
 			.case-div{padding: 20px 20px 20px 20px !important;}
+		}
+
+		@media (min-width: 600px) {
+		  .cards { grid-template-columns: repeat(2, 1fr) !important; }
+		  .overview-row { grid-template-columns: repeat(4, 1fr) !important; }
 		}
 	</style>
 
