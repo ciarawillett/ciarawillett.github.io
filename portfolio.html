@@ -74,7 +74,10 @@
 		@media (max-width:469px) {
 			.header{margin: 20px 10px 20px 10px !important; text-align:center !important;}
 			.case-div{padding: 20px 20px 20px 20px !important;}
+			.header-links{text-align:center !important;}
 		}
+
+		.header-links a {margin-right:15px;}
 
 		@media (min-width: 600px) {
 		  .cards { grid-template-columns: repeat(2, 1fr) !important; }
@@ -83,10 +86,18 @@
 	</style>
 
 	<body>
-
 		<!-- Page Header -->
 		<div class = "header">
-			<a class="header-link" href="https://ciarawillett.github.io/index.html" ><span class="light">ciara</span><span class="medium">willett</span></a>
+			<div class="cards">
+				<div class="left-col">
+					<a class="header-link" href="https://ciarawillett.github.io/index.html" ><span class="light">ciara</span><span class="medium">willett</span></a>
+				</div>
+				<div class="right-col header-links" align="right" style="font-size:16px !important">
+					<a href="mailto:ciarawillett@pitt.edu">email</a>
+					<a href="files/Willett_Resume.pdf" download>resume</a>
+					<a href="files/Willett_CV.pdf" download>CV</a>
+				</div>
+			</div>
 		</div>
 
 		<!-- TITLE OF PROJECT -->
