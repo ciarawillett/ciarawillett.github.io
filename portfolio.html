@@ -35,7 +35,7 @@
 
 	<style>
 
-		.container{max-width:1000px !important;}
+		/*.container{max-width:1000px !important;}
 
 		.icon-container{border:1px solid black; border-radius:45px;height:300px;width:300px;padding-bottom:20px !important;}
 
@@ -45,14 +45,14 @@
 		}
 
 		/* Case Study Div */
-		.case-div{padding: 20px 50px 20px 50px;}
+		/*.case-div{padding: 20px 50px 20px 50px;}
 		.case-main{line-height:2em;}
 		li{padding-bottom:15px;}
 		.subtitle{font-weight: 500; color: #E46868; font-size:18px; padding-bottom:10px;}
-		.figure-caption{font-size:14px; line-height:12px !important; color: #605757;}
+		.figure-caption{font-size:14px; line-height:12px !important; color: #605757;}*/
 
 		/*Card Style Row*/
-		.right-col{padding-left:20px; padding-top:40px;}
+		/*.right-col{padding-left:20px; padding-top:40px;}
 		.left-col{padding-top:40px;}
 		.cards{
 		  margin: 0 auto;
@@ -62,25 +62,89 @@
 		.card-link:hover .icon-container{border: 1px solid #C79F9F !important; background-color:#C79F9F ;}
 		.card-link:hover .subtitle{color:#C79F9F !important;}
 		.card-link:hover .figure-caption{color:#C79F9F !important;}
-		.card-link:hover img{opacity: 40%}
+		.card-link:hover img{opacity: 40%}*/
 
 		/* Overview Columns */
-		.overview-column {flex: 25%; padding: 20px;}
+		/*.overview-column {flex: 25%; padding: 20px;}*/
+
+		/* Slider */
+		/*.regular button{color: black;}*/
+
+		/* Media Adjustments */
+		/*@media (max-width:469px) {
+			.header{margin: 20px 10px 20px 10px !important;
+				text-align:center !important;}
+			.case-div{padding: 20px 20px 20px 20px !important;}
+			.header-links{text-align:center !important;}
+		}
+
+		.header-links a {margin-right:15px;}*/
+
+		/*@media (min-width: 600px) {
+		  .cards { grid-template-columns: repeat(2, 1fr) !important; }
+		}*/
+
+		.container{max-width:1000px !important;}
+
+		.intro-main{line-height:2em;}
+		.intro-title{
+			font-family: 'Source Serif 4'; font-weight: 500; font-size: 36px;
+			margin-bottom: 15px; padding-bottom: 15px;
+		}
+		.intro-subtitle{font-family: 'Source Serif 4'; font-weight: 500;
+			font-size:24px; color: #E46868; padding-bottom:10px;}
+
+		/* Case Study Div */
+		.case-div{padding: 20px 50px 20px 50px;}
+		.case-main{line-height:2em;}
+		li{padding-bottom:15px;}
+		.subtitle{
+			font-family: 'Source Serif 4'; font-weight: 500;
+			font-size:20px; color: #E46868;
+			padding-bottom:10px;
+		}
+		.figure-caption{font-size:10px; line-height:12px !important;}
+
+		/*Card Style Row*/
+		.right-col{padding-left:20px;}
+		.cards, .overview-row {
+		  margin: 0 auto;
+		  display: grid;
+		  gap: 1rem;
+		}
+
+		/* Overview of Project Columns */
+		.overview-column {padding: 20px; max-width:250px;}
+		.overview-row {max-width:800px;margin:auto !important;
+			grid-template-columns: repeat(2, 1fr)}
 
 		/* Slider */
 		.regular button{color: black;}
 
 		/* Media Adjustments */
 		@media (max-width:469px) {
-			.header{margin: 20px 10px 20px 10px !important; text-align:center !important;}
+			.header{margin: 20px 10px 20px 10px !important;
+				text-align:center !important;}
 			.case-div{padding: 20px 20px 20px 20px !important;}
+			img{max-width:300px !important;}
 			.header-links{text-align:center !important;}
+			.overview-column {padding: 10px !important}
 		}
 
 		.header-links a {margin-right:15px;}
 
 		@media (min-width: 600px) {
 		  .cards { grid-template-columns: repeat(2, 1fr) !important; }
+		  .overview-row { grid-template-columns: repeat(4, 1fr) !important; }
+		}
+
+		/* Vertical Align Text */
+		.div-verticalalign {
+		  position: relative;
+		  top: 50%;
+		  -ms-transform: translateY(-50%);
+		  -webkit-transform: translateY(-50%);
+		  transform: translateY(-50%);
 		}
 
 	</style>
